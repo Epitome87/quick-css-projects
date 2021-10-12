@@ -36,17 +36,18 @@ body {
 }
 
 .box:nth-of-type(2)::before {
-  background: linear-gradient(yellow, orange);
+  background: linear-gradient(#fbff0a, #ff0a0a);
 }
 
 .box:nth-of-type(3)::before {
-  background: linear-gradient(green, blue);
+  background: linear-gradient(#82ab41, #4162b0);
+  animation: animate 4s linear reverse infinite;
 }
 
 .box::after {
   content: "";
   position: absolute;
-  inset: 4px;
+  inset: 6px;
   background-color: #0e1538;
   border-radius: 16px;
 }
