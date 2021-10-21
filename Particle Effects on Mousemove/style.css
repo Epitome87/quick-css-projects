@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -16,19 +18,25 @@ section {
   background-size: cover; */
 }
 
+canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
 .bg {
   position: absolute;
   top: 0;
   left: 0;
+  /* z-index: -11; */
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-canvas {
-  display: block;
-  vertical-align: center;
-  z-index: 10;
 }
 
 #particles-js {
@@ -45,5 +53,6 @@ canvas {
   position: relative;
   height: 100vh;
   width: 100%;
+  background: #fff;
   mix-blend-mode: screen;
 }
