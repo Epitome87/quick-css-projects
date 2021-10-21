@@ -10,8 +10,8 @@ particlesJS.load('particles-js', 'particles.json', function() {
 */
 
 /* Otherwise just put the config content (json): */
-let maxParticles = 800;
-let color = '#000';
+let maxParticles = 800 * 0.1;
+let color = '#fff'; //'#000'; // Doesn't seem to matter when blending?
 
 particlesJS(
   'particles-js',
@@ -29,23 +29,23 @@ particlesJS(
         value: color, // "#000"
       },
       shape: {
-        type: 'circle',
+        type: ['triangle', 'circle', 'polygon'], // 'circle'
         stroke: {
-          width: 0,
-          color: '#000000',
+          width: 2, // 0
+          color: '#000', // #000000  // White not working for blending
         },
         polygon: {
           nb_sides: 5,
         },
         image: {
-          src: 'img/github.svg',
+          src: 'particle.png',
           width: 100,
           height: 100,
         },
       },
       opacity: {
         value: 1, // 1
-        random: false,
+        random: false, // false
         anim: {
           enable: false,
           speed: 1,
@@ -54,7 +54,7 @@ particlesJS(
         },
       },
       size: {
-        value: 5,
+        value: 5 * 2,
         random: true,
         anim: {
           enable: false,
@@ -64,15 +64,15 @@ particlesJS(
         },
       },
       line_linked: {
-        enable: false,
-        distance: 150,
-        color: '#000',
+        enable: true, // false
+        distance: 50, // 150
+        color: '#fff', // '#000'
         opacity: 0.4,
         width: 1,
       },
       move: {
         enable: true,
-        speed: 5,
+        speed: 15, // 5
         direction: 'none',
         random: false,
         straight: false,
@@ -89,11 +89,11 @@ particlesJS(
       events: {
         onhover: {
           enable: true,
-          mode: 'bubble',
+          mode: 'bubble', // 'bubble'
         },
         onclick: {
           enable: true,
-          mode: 'push',
+          mode: 'repulse', // 'push'
         },
         resize: true,
       },
@@ -105,8 +105,8 @@ particlesJS(
           },
         },
         bubble: {
-          distance: 400,
-          size: 50,
+          distance: 400 * 1,
+          size: 50 * 2,
           duration: 2,
           opacity: 8,
           speed: 3,
@@ -115,7 +115,7 @@ particlesJS(
           distance: 200,
         },
         push: {
-          particles_nb: 4,
+          particles_nb: 4 * 10,
         },
         remove: {
           particles_nb: 2,

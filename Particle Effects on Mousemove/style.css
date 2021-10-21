@@ -24,9 +24,25 @@ canvas {
   height: 100%;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 1;
+  /* right: 0;
+  bottom: 0; */
+  /* z-index: 1; */
+}
+
+h1 {
+  /* z-index: 10; */
+  font-size: 12rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -75%);
+  text-align: center;
+  color: #fff;
+  opacity: 0.75;
+  text-shadow: 10px 10px #000;
+  /* background-color: pink; */
+  /* mix-blend-mode: screen; */
+  /* background-blend-mode: screen; */
 }
 
 .bg {
@@ -53,6 +69,8 @@ canvas {
   position: relative;
   height: 100vh;
   width: 100%;
-  background: #fff;
-  mix-blend-mode: screen;
+  /* If using white background, "screen" seems to work best */
+  background: #000; /* #fff; */
+  /* If using dark background, multiply seems to work best */
+  mix-blend-mode: multiply;
 }
