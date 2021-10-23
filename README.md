@@ -47,6 +47,8 @@ Description to come.
 
 Description to come.
 
+<img src="Preview-06.png" width="800px">
+
 ###### `Originally Completed: 10/21/2021`
 
 <!--

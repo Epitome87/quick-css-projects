@@ -1,0 +1,104 @@
+:root {
+  /* Between 300ms and 700ms looks best  */
+  --glitch-duration: 500ms;
+  --drop-shadow-opacity: 0.5;
+}
+
+body {
+  background-color: #222;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+.glitch {
+  position: relative;
+  font-size: 10rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  /* Use em so the shadow grows and shrinks with the font size */
+  text-shadow: 0.05em 0 0 rgba(255, 0, 0, var(--drop-shadow-opacity)),
+    -0.025em -0.05em 0 rgba(0, 255, 0, var(--drop-shadow-opacity)),
+    0.025em 0.05em 0 rgba(0, 0, 255, var(--drop-shadow-opacity));
+
+  animation: glitch var(--glitch-duration) infinite;
+}
+
+.glitch span {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.glitch span:first-child {
+  animation: glitch calc(var(--glitch-duration) * 1.2) infinite;
+  /* Only keep the top half*/
+  clip-path: polygon(0 0, 100% 0, 100% 45%, 0 30%);
+  transform: translate(-0.05em, 0.0125em);
+  /* translating -0.025em, -0.0125em looks good */
+  opacity: 0.8;
+}
+
+.glitch span:last-child {
+  animation: glitch calc(var(--glitch-duration) * 0.8) infinite;
+  /* Only keep the bottom half */
+  clip-path: polygon(0 80%, 100% 20%, 100% 100%, 0 100%);
+  transform: translate(0.05em, -0.025em);
+  /* translating 0.0125em, 0.025em looks good */
+  opacity: 0.8;
+}
+
+@keyframes glitch {
+  /* From 0% - 14% the values stay the same... */
+  0%,
+  14% {
+    opacity: 1;
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, var(--drop-shadow-opacity)),
+      -0.025em -0.05em 0 rgba(0, 255, 0, var(--drop-shadow-opacity)),
+      0.025em 0.05em 0 rgba(0, 0, 255, var(--drop-shadow-opacity));
+  }
+
+  /* And then jump suddenly to the values at 15%! */
+  /* And now, from 15% to 49%, the values stay the same... */
+  15%,
+  49% {
+    opacity: 0.6;
+    text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, var(--drop-shadow-opacity)),
+      0.025em 0.025em 0 rgba(0, 255, 0, var(--drop-shadow-opacity)),
+      -0.05em -0.05em 0 rgba(0, 0, 255, var(--drop-shadow-opacity));
+  }
+  /* And then jump suddenly toe the values at 50%! */
+  /* And now, from 50% to 99%, the values stay the same... */
+  50%,
+  99% {
+    opacity: 0.8;
+    text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, var(--drop-shadow-opacity)),
+      0.05em 0 0 rgba(0, 255, 0, var(--drop-shadow-opacity)),
+      0 -0.05em 0 rgba(0, 0, 255, var(--drop-shadow-opacity));
+  }
+
+  /* And jump suddenly one last time! */
+  100% {
+    opacity: 0.9;
+    text-shadow: -0.025em, 0 0 rgba(255, 0, 0, var(--drop-shadow-opacity)),
+      -0.025em -0.025em 0 rgba(0, 255, 0, var(--drop-shadow-opacity)),
+      -0.025em -0.05em 0 rgba(0, 0, 255, var(--drop-shadow-opacity));
+  }
+}
+
+/* Disable animations if the user has their settings to do so */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-delay: -1ms !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    background-attachment: initial !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0s !important;
+    transition-delay: 0s !important;
+  }
+}
