@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  background-color: #202731;
+  overflow-x: hidden;
+}
+
+section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 400px;
+  padding: 100px 20vw;
+}
+
+.blue {
+  background-color: #3c31dd;
+}
+.red {
+  background-color: #dd3f31;
+}
+
+.pink {
+  background-color: #ff0066;
+}
+
+.dark {
+  background-color: #0f0f10;
+}
+
+.curve {
+  position: absolute;
+  height: 250px;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+}
+
+.curve::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 55%;
+  height: 100%;
+  background-color: #202731;
+  transform: translate(85%, 60%);
+}
+
+.curve::after {
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 55%;
+  height: 100%;
+  background-color: #3c31dd;
+  transform: translate(-4%, 40%);
+  z-index: -1;
+}
+
+.bubble::after {
+  content: '';
+  border-top-left-radius: 50% 100%;
+  border-top-right-radius: 50% 100%;
+  position: absolute;
+  bottom: 0;
+  height: 85%;
+  width: 100%;
+  background-color: #0f0f10;
+  z-index: -1;
+}
+
+.wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave svg {
+  position: relative;
+  display: block;
+  width: calc(108% + 1.3px);
+  height: 175px;
+}
+
+.wave .shape-fill {
+  fill: #0f0f10;
+}
+
+.spacer {
+  aspect-ratio: 960/300;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.layer1 {
+  background-image: url('./layer1.svg');
+}
+
+.layer2 {
+  background-image: url('./layer2.svg');
+}
+
+.flip {
+  transform: rotate(180deg);
+}
+
+.blob-motion {
+  position: absolute;
+  transform: translateY(-20%);
+}
+
+/* Quick ugly fix */
+section.pink h1,
+section.pink p {
+  z-index: 1;
+}

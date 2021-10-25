@@ -24,12 +24,25 @@ section {
   display: grid;
   place-items: center;
   margin: 0 2em;
-  -webkit-perspective: 1px;
+  /* -webkit-perspective: 1px;
   -moz-perspective: 1px;
   perspective: 1px;
   -webkit-perspective-origin: 50% 50%;
   -moz-perspective-origin: 50% 50%;
+  perspective-origin: 50% 50%; */
+}
+
+.container .inner {
+  -webkit-perspective: 5000px;
+  -moz-perspective: 5000px;
+  perspective: 5000px;
+  -webkit-perspective-origin: 50% 50%;
+  -moz-perspective-origin: 50% 50%;
   perspective-origin: 50% 50%;
+}
+
+.container p {
+  opacity: 0;
 }
 
 .container .frame-box {
@@ -41,6 +54,9 @@ section {
   background-position: bottom;
   border-radius: 0.5em;
   margin-top: 4em;
+
+  transform: rotateX(90deg);
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
 }
 
 h1 {
@@ -53,17 +69,25 @@ h1 {
     animation: 1s linear forwards flip-card;
     animation-timeline: flip-timeline;
     transform-style: preserve-3d;
-    /* backface-visibility: hidden; */
+    backface-visibility: hidden;
   }
 
   @scroll-timeline flip-timeline {
-    time-range: 1.7s;
+    /* This is the entire scroll area if left out */
+    /* source: selector(#inner) */
+    time-range: 1s;
+    /* scroll-offsets: 50%, 60%; */
+
+    source: selector(body);
+    /* scroll-offsets: selector(#frame-box) end 1, selector(#frame-box) end 0.5; */
+    start: selector(#frame-box) end 0.2;
+    end: selector(#frame-box) end 1;
   }
 
   @keyframes flip-card {
     from {
       opacity: 0;
-      transform: rotateX(-120deg);
+      transform: rotateX(90deg);
     }
     to {
       opacity: 1;

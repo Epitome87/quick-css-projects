@@ -11,6 +11,8 @@ Just some random, short CSS-based projects that I think are cool, unique, or use
 | <img src="Preview-05.png" width="200px" height="150px"> | [Corner Text Parallax Effects](https://github.com/Epitome87/quick-css-projects/tree/main/Corner%20Text%20Parallax%20Effects)               | [Demo](https://epitome87.github.io/quick-css-projects/Corner%20Text%20Parallax%20Effects/)         |
 | <img src="Preview-06.png" width="200px" height="150px"> | [Particle Effects on Mousemove](https://github.com/Epitome87/quick-css-projects/tree/main/Particle%20Effects%20on%20Mousemove)             | [Demo](https://epitome87.github.io/quick-css-projects/Particle%20Effects%20on%20Mousemove/)        |
 | <img src="Preview-07.png" width="200px" height="150px"> | [Glitch Text](https://github.com/Epitome87/quick-css-projects/tree/main/Glitch%20Text)                                                     | [Demo](https://epitome87.github.io/quick-css-projects/Glitch%20Text/)                              |
+| <img src="Preview-08.png" width="200px" height="150px"> | [Animate On Scroll](https://github.com/Epitome87/quick-css-projects/tree/main/Animate%20On%20Scroll)                                       | [Demo](https://epitome87.github.io/quick-css-projects/Animate%20On%20Scroll/)                      |
+| <img src="Preview-09.png" width="200px" height="150px"> | [Curvy Homepage](https://github.com/Epitome87/quick-css-projects/tree/main/Curvy%20Homepage)                                               | [Demo](https://epitome87.github.io/quick-css-projects/Curvy%20Homepage/)                           |
 
 ## Project #1: Border Animation
 
@@ -58,12 +60,28 @@ Description to come.
 
 <img src="Preview-06.png" width="800px">
 
-###### `Originally Completed: 10/21/2021`
+###### `Originally Completed: 10/22/2021`
 
-## PRoject #7: Glitch Text
+## Project #7: Glitch Text
 
 Description to come.
 
 <img src="Preview-07.png" width="800px">
 
 ###### `Originally Completed: 10/22/2021`
+
+## Project #8: Animate On Scroll
+
+Description to come.
+
+<img src="Preview-08.png" width="800px">
+
+###### `Originally Completed: 10/23/2021`
+
+## Project #9: Curvy Homepage
+
+Description to come.
+
+<img src="Preview-09.png" width="800px">
+
+###### `Originally Completed: 10/24/2021`
