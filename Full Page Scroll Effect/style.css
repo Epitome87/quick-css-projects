@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* hide scrollbar but allow scrolling */
+/* body,
+.container {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+  overflow-y: scroll;
+}
+body::-webkit-scrollbar,
+.container::-webkit-scrollbar {
+  display: none; 
+} */
+
+section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: white;
+  scroll-snap-align: start;
+}
+
+.container.mandatory {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+  /* scroll-padding: 0px; */
+}
+
+.container.proximity {
+  scroll-snap-type: y proximity;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.one {
+  background-color: rgb(36, 164, 138);
+}
+
+.two {
+  background-color: rgb(211, 79, 79);
+  height: 60vh;
+}
+
+.three {
+  background-color: rgb(67, 91, 175);
+  height: 140vh;
+}
+
+.four {
+  background-color: rgb(255, 160, 122);
+  height: 50vh;
+}
+
+.five {
+  background-color: rgb(10, 9, 8);
+  height: 110vh;
+}
+
+/* Snap utlity functions */
+.snap-start {
+  scroll-snap-align: start;
+}
+
+.snap-center {
+  scroll-snap-align: center;
+}
+
+.snap-end {
+  scroll-snap-align: end;
+}
+
+/* 
+Steps:
+1. Add scroll-snap-align to the children elements. Possible values are <start>, <end> and <center>
+2. Add scroll-snap-type to the container. You can pass <x> or <y> (or both) as first argument, and <mandatory> or <proximity> as second
+3. Add overflow-y: scroll to container
+4. Make sure container has a height
+ */

@@ -13,6 +13,7 @@ Just some random, short CSS-based projects that I think are cool, unique, or use
 | <img src="Preview-07.png" width="200px" height="150px"> | [Glitch Text](https://github.com/Epitome87/quick-css-projects/tree/main/Glitch%20Text)                                                     | [Demo](https://epitome87.github.io/quick-css-projects/Glitch%20Text/)                              |
 | <img src="Preview-08.png" width="200px" height="150px"> | [Animate On Scroll](https://github.com/Epitome87/quick-css-projects/tree/main/Animate%20On%20Scroll)                                       | [Demo](https://epitome87.github.io/quick-css-projects/Animate%20On%20Scroll/)                      |
 | <img src="Preview-09.png" width="200px" height="150px"> | [Curvy Homepage](https://github.com/Epitome87/quick-css-projects/tree/main/Curvy%20Homepage)                                               | [Demo](https://epitome87.github.io/quick-css-projects/Curvy%20Homepage/)                           |
+| <img src="Preview-10.png" width="200px" height="150px"> | [Full Page Scroll Effect](https://github.com/Epitome87/quick-css-projects/tree/main/Full%20Page%20Scroll%20Effect)                         | [Demo](https://epitome87.github.io/quick-css-projects/Full%20Page%20Scroll%20Effect/)              |
 
 ## Project #1: Border Animation
 
@@ -85,3 +86,11 @@ Description to come.
 <img src="Preview-09.png" width="800px">
 
 ###### `Originally Completed: 10/24/2021`
+
+## Project #10: Full Page Scroll Effect
+
+Description to come.
+
+<img src="Preview-10.png" width="800px">
+
+###### `Originally Completed: 10/25/2021`

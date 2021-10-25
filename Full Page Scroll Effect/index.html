@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Full Page Scroll Effect</title>
+  </head>
+  <body>
+    <div class="container mandatory">
+      <section class="one snap-start">
+        <h1>First Section</h1>
+        <p>Scroll down to experience</p>
+        <p>scroll-snap-type: y mandatory</p>
+      </section>
+      <section class="two snap-start">
+        <h1>Second Section</h1>
+        <p>Mandatory-Type Snapping</p>
+        <p>Snap Aligned to Start</p>
+      </section>
+      <section class="three snap-end">
+        <h1>Third Section</h1>
+        <p>Mandatory-Type Snapping</p>
+        <p>Snap Aligned to End</p>
+      </section>
+      <section class="four snap-center">
+        <h1>Fourth Section</h1>
+        <p>Mandatory-Type Snapping</p>
+        <p>Snap Aligned to Center</p>
+      </section>
+      <section class="five snap-end">
+        <p>
+          Note how scroll-snap-type: mandatory will <em>always</em> snap into
+          place if scrolling occurs
+        </p>
+        <p>
+          Focus the next inner scrollbar area to experience Proximity Snapping
+        </p>
+      </section>
+    </div>
+
+    <div class="container proximity">
+      <section class="one snap-start">
+        <h1>First Section</h1>
+        <p>Scroll down to experience</p>
+        <p>scroll-snap-type: y proximity</p>
+      </section>
+      <section class="two snap-start">
+        <h1>Second Section</h1>
+        <p>Proximity-Type Snapping</p>
+        <p>Snap Aligned to Start</p>
+      </section>
+      <section class="three snap-start">
+        <h1>Third Section</h1>
+        <p>Proximity-Type Snapping</p>
+        <p>Snap Aligned to Start</p>
+      </section>
+      <section class="four snap-center">
+        <h1>Fourth Section</h1>
+        <p>Proximity-Type Snapping</p>
+        <p>Snap Aligned to Center</p>
+      </section>
+      <section class="five snap-end">
+        <p>
+          scroll-snap-type: proximity will only snap into place if a scrolling
+          action gets pretty close to a snap position
+        </p>
+      </section>
+    </div>
+  </body>
+</html>
