@@ -1,5 +1,6 @@
-
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -13,8 +14,70 @@ body {
   background: radial-gradient(rgb(42, 86, 130), rgb(22, 48, 74));
 }
 
+.face {
+  width: 500px;
+  height: 500px;
+  background: orange;
+  border-radius: 50%;
+  transition: 1s ease;
+}
+
+.eyebrows {
+  position: relative;
+  /* background-color: brown; */
+  width: 340px;
+  height: 30px;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+}
+
+.eyebrow-left {
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: -100px;
+}
+
+.eybrow-right {
+  width: 200px;
+  height: 100px;
+  background-color: green;
+  position: absolute;
+  top: 0;
+  left: 100px;
+}
+
+.mouth {
+  width: 300px;
+  height: 100px;
+  background-color: black;
+  border-radius: 0 0 50% 50%;
+  margin-left: 6rem;
+  margin-top: 2rem;
+  transition: 0.5s ease-in-out;
+}
+
+.face:hover .eye-container {
+  margin-top: 8rem;
+}
+
+.face:hover .mouth {
+  height: 50px;
+  border-radius: 50% 50% 0 0;
+}
+
+.face:hover {
+  background-color: red;
+  background-color: radial-gradient(orange 30%, red 100%);
+}
+
 .eye-container {
   display: flex;
+  margin-top: 7rem;
+  margin-left: 3rem;
+  transition: 1s ease-in-out;
 }
 
 .eye {
@@ -25,12 +88,12 @@ body {
   height: 150px;
   margin: 0 25px;
   border-radius: 50%;
-  box-shadow: 0 5px 45px rgba(0,0,0, 0.2), inset 0 0 15px rgb(42, 86, 130), inset 0 0 25px rgb(42, 86, 130);
-  /* #f2761e */
+  box-shadow: 0 5px 45px rgba(0, 0, 0, 0.2), inset 0 0 15px rgb(42, 86, 130),
+    inset 0 0 25px rgb(42, 86, 130);
 }
 
 .eye::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 50%;
   left: 35%;
