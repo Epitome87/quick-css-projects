@@ -10,9 +10,10 @@
 
 body {
   color: black;
-  background-color: white;
   margin: 0;
   padding: 0;
+  color: white;
+  background-color: #b4869f;
 }
 
 body::-webkit-scrollbar {
@@ -36,7 +37,8 @@ main {
   position: fixed;
   background-color: var(--bg-primary);
   transition: width 600ms ease;
-  overflow: scroll;
+  /* Probably don't need ability to scroll for this example - but maybe ones with more nav links */
+  /* overflow: scroll; */
 }
 
 .navbar-nav {
@@ -114,8 +116,7 @@ main {
   transition: var(--transition-speed);
 }
 
-.logo-text
-{
+.logo-text {
   display: inline;
   position: absolute;
   left: -999px;
@@ -167,13 +168,11 @@ main {
     display: inline;
   }
 
-  .navbar:hover .logo svg
-  {
+  .navbar:hover .logo svg {
     margin-left: 11rem;
   }
 
-  .navbar:hover .logo-text
-  {
+  .navbar:hover .logo-text {
     left: 0px;
   }
 }

@@ -14,9 +14,11 @@ Just some random, short CSS-based projects that I think are cool, unique, or use
 | <img src="Preview Images/Preview-08.png" width="200px" height="150px"> | [Animate On Scroll](https://github.com/Epitome87/quick-css-projects/tree/main/Animate%20On%20Scroll)                                       | [Demo](https://epitome87.github.io/quick-css-projects/Animate%20On%20Scroll/)                      |
 | <img src="Preview Images/Preview-09.png" width="200px" height="150px"> | [Curvy Homepage](https://github.com/Epitome87/quick-css-projects/tree/main/Curvy%20Homepage)                                               | [Demo](https://epitome87.github.io/quick-css-projects/Curvy%20Homepage/)                           |
 | <img src="Preview Images/Preview-10.png" width="200px" height="150px"> | [Full Page Scroll Effect](https://github.com/Epitome87/quick-css-projects/tree/main/Full%20Page%20Scroll%20Effect)                         | [Demo](https://epitome87.github.io/quick-css-projects/Full%20Page%20Scroll%20Effect/)              |
-| <img src="Preview Images/Preview-11.png" width="200px" height="150px"> | [Full Page Scroll Effect](https://github.com/Epitome87/quick-css-projects/tree/main/Triangles%20With%20Hover)                              | [Demo](https://epitome87.github.io/quick-css-projects/Triangles%20With%20Hover/)                   |
-| <img src="Preview Images/Preview-12.png" width="200px" height="150px"> | [Full Page Scroll Effect](https://github.com/Epitome87/quick-css-projects/tree/main/Animated%20Background)                                 | [Demo](https://epitome87.github.io/quick-css-projects/Animated%20Background/)                      |
-| <img src="Preview Images/Preview-13.png" width="200px" height="150px"> | [Full Page Scroll Effect](https://github.com/Epitome87/quick-css-projects/tree/main/Eyes%20Follow%20Mouse)                                 | [Demo](https://epitome87.github.io/quick-css-projects/Eyes%20Follow%20Mouse/)                      |
+| <img src="Preview Images/Preview-11.png" width="200px" height="150px"> | [Triangles With Hover](https://github.com/Epitome87/quick-css-projects/tree/main/Triangles%20With%20Hover)                                 | [Demo](https://epitome87.github.io/quick-css-projects/Triangles%20With%20Hover/)                   |
+| <img src="Preview Images/Preview-12.png" width="200px" height="150px"> | [Animated background](https://github.com/Epitome87/quick-css-projects/tree/main/Animated%20Background)                                     | [Demo](https://epitome87.github.io/quick-css-projects/Animated%20Background/)                      |
+| <img src="Preview Images/Preview-13.png" width="200px" height="150px"> | [Eyes Follow Mouse](https://github.com/Epitome87/quick-css-projects/tree/main/Eyes%20Follow%20Mouse)                                       | [Demo](https://epitome87.github.io/quick-css-projects/Eyes%20Follow%20Mouse/)                      |
+| <img src="Preview Images/Preview-14.gif" width="200px" height="150px"> | [Animated Responsive Navbar](https://github.com/Epitome87/quick-css-projects/tree/main/Animated%20Responsive%20Navbar)                     | [Demo](https://epitome87.github.io/quick-css-projects/Animated%20Responsive%20Navbar/)             |
+| <img src="Preview Images/Preview-15.png" width="200px" height="150px"> | [3D Text](https://github.com/Epitome87/quick-css-projects/tree/main/3D%20Text)                                                             | [Demo](https://epitome87.github.io/quick-css-projects/3D%20Text/)                                  |
 
 ## Project #1: Border Animation
 
@@ -121,3 +123,19 @@ Description to come.
 <img src="Preview Images/Preview-13.png" width="800px">
 
 ###### `Originally Completed: 10/27/2021`
+
+## Project #14: Eyes Follow Mouse
+
+Description to come.
+
+<img src="Preview Images/Preview-14.gif" width="800px">
+
+###### `Originally Completed: 10/31/2021`
+
+## Project #15: Eyes Follow Mouse
+
+Description to come.
+
+<img src="Preview Images/Preview-15.png" width="800px">
+
+###### `Originally Completed: 11/01/2021`
